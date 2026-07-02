@@ -827,7 +827,7 @@ position: "fixed", top: 0, left: sidebarOpen ? 0 : -240, height: "100vh",
 zIndex: 50,
 transition: "left 0.2s ease",
 }} className="sidebar-responsive">
-<div style={{ padding: "24px 20px", display: "flex", alignItems: "center",
+<div style={{ padding: "calc(24px + env(safe-area-inset-top)) 20px 24px", display: "flex", alignItems: "center",
 gap: 12 }}>
 <div style={{ width: 36, height: 36, borderRadius: 9, background:
 ORANGE,
