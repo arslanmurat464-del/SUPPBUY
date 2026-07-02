@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useMemo } from "react";
 import { Plus, Building2, MapPin, Calendar, Trash2, Lock, Eye, EyeOff, X,
   Users, LayoutGrid, CheckSquare, BarChart3, Search, Tag, Clock, ChevronLeft,
