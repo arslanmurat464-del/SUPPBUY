@@ -50,7 +50,7 @@ const NAVY_DARK = "#132C4F";
 const ORANGE = "#F2A12E";
 const BG = "#F5F6F8";
 
-const ADMIN_PIN = "1234"; // Yönetici (sen) — bunu değiştir
+const ADMIN_PIN = "3256"; // Yönetici (sen) — bunu değiştir
 
 const FIRMA_TIPI = ["Alıcı Firma", "Ürün Tedarikçisi", "Hizmet Tedarikçisi"];
 const KAYNAK_SECENEKLERI = ["Saha Ziyareti", "LinkedIn", "Instagram", "İş İlanı Sitesi"];
