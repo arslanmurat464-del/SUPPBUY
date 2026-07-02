@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useMemo } from "react";
 import { Plus, Building2, MapPin, Calendar, Trash2, Lock, Eye, EyeOff, X,
   Users, LayoutGrid, CheckSquare, BarChart3, Search, Tag, Clock, ChevronLeft,
@@ -51,7 +50,7 @@ const NAVY_DARK = "#132C4F";
 const ORANGE = "#F2A12E";
 const BG = "#F5F6F8";
 
-const ADMIN_PIN = "3256"; // Yönetici (sen) — bunu değiştir
+const ADMIN_PIN = "1234"; // Yönetici (sen) — bunu değiştir
 
 const FIRMA_TIPI = ["Alıcı Firma", "Ürün Tedarikçisi", "Hizmet Tedarikçisi"];
 const KAYNAK_SECENEKLERI = ["Saha Ziyareti", "LinkedIn", "Instagram", "İş İlanı Sitesi"];
@@ -558,15 +557,15 @@ export default function SuppbuyCRM() {
     const adminEslesme = pinInput === ADMIN_PIN;
     return (
       <div style={{ minHeight: "100vh", background: `linear-gradient(160deg, ${NAVY_DARK}, ${NAVY})`, display: "flex",
-        alignItems: "center", justifyContent: "center", fontFamily: "system-ui, -apple-system, sans-serif", padding: 20 }}>
-        <div style={{ width: "100%", maxWidth: 380 }}>
+        alignItems: "center", justifyContent: "center", fontFamily: "system-ui, -apple-system, sans-serif", padding: "20px 16px", boxSizing: "border-box", width: "100%" }}>
+        <div style={{ width: "100%", maxWidth: 380, boxSizing: "border-box" }}>
           <div style={{ textAlign: "center", marginBottom: 32 }}>
             <div style={{ width: 60, height: 60, borderRadius: 14, background: ORANGE, margin: "0 auto 18px",
               display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 26, color: NAVY }}>S</div>
             <div style={{ color: "white", fontSize: 24, fontWeight: 700, letterSpacing: -0.3 }}>Suppbuy CRM</div>
             <div style={{ color: "rgba(255,255,255,0.55)", fontSize: 14, marginTop: 6 }}>Erişim kodunuzu girin</div>
           </div>
-          <form onSubmit={handlePinSubmit} style={{ background: "white", borderRadius: 18, padding: 28, boxShadow: "0 20px 60px rgba(0,0,0,0.25)" }}>
+          <form onSubmit={handlePinSubmit} style={{ background: "white", borderRadius: 18, padding: "24px 20px", boxShadow: "0 20px 60px rgba(0,0,0,0.25)", boxSizing: "border-box" }}>
             <div style={{ position: "relative", marginBottom: 14 }}>
               <Lock size={18} color="#9AA0AC" style={{ position: "absolute", left: 14, top: 15 }} />
               <input type={showPin ? "text" : "password"} value={pinInput} onChange={e => setPinInput(e.target.value)}
@@ -660,7 +659,7 @@ export default function SuppbuyCRM() {
 
       <div style={{ flex: 1, marginLeft: 0 }} className="main-responsive">
         <div style={{ background: "white", borderBottom: "1px solid #E9EBEF", padding: "14px 20px",
-          display: "flex", alignItems: "center", gap: 14, position: "sticky", top: 0, zIndex: 20 }}>
+          display: "flex", alignItems: "center", gap: 14, position: "relative", zIndex: 20 }}>
           <button onClick={() => setSidebarOpen(true)} className="menu-toggle" style={{
             background: "none", border: "none", cursor: "pointer", color: NAVY
           }}>
