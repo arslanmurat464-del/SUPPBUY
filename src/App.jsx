@@ -293,8 +293,7 @@ catch (e) { showToast("Kaydedilemedi"); }
 async function persistToplantilar(next) {
 setToplantilar(next);
 try { await window.storage.set("crm-toplantilar", JSON.stringify(next), true);
-catch (e) { showToast("Kaydedilemedi"); }
-}
+catch (e) { showToast("Kaydedilemedi"); 
 async function persistIlanlar(next) {
 setIlanlar(next);
 try { await window.storage.set("crm-ilanlar", JSON.stringify(next), true); }
