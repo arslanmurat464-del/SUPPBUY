@@ -899,7 +899,7 @@ alignItems: "center", gap: 8
 </div>
 <div style={{ flex: 1, marginLeft: 0 }} className="main-responsive">
 <div style={{ background: "white", borderBottom: "1px solid #E9EBEF",
-padding: "14px 20px",
+padding: "calc(14px + env(safe-area-inset-top)) 20px 14px",
 display: "flex", alignItems: "center", gap: 14, position: "relative",
 zIndex: 20 }}>
 <button onClick={() => setSidebarOpen(true)} className="menu-toggle"
